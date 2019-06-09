@@ -28,3 +28,7 @@ def full?(board)
     position.strip == ""
   end
 end
+
+def draw?(board)
+  
+end
