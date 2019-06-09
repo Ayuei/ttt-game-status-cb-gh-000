@@ -22,3 +22,9 @@ def won?(board)
      board.values_at(*combination).all?{|character| character=='O'})
    }
 end
+
+def full?(board)
+  board.any? do |position|
+    position.strip == ""
+  end
+end
