@@ -17,7 +17,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |combination|
-    all_same =
+  WIN_COMBINATIONS.any?{|combination|
+    (board[combination].all?{|character| character=='X'} ||
+     board[combination].all?{|character| character=='O'})
+   }
   end
 end
