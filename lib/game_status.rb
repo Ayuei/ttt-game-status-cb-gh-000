@@ -44,5 +44,8 @@ def over?(board)
 end
 
 def winner(board)
-
+  obj = won?(board)
+  if obj.respond_to?(:values_at)
+    return board[obj[0]]
+  end
 end
