@@ -31,11 +31,11 @@ end
 
 def draw?(board)
   if won?(board)
-    return False
+    return false
   elsif !won?(board) && full?(board)
-    return True
+    return true
   else
-    return False
+    return false
   end
 end
 
