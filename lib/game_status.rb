@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.any?{|combination|
-    (board[combination].all?{|character| character=='X'} ||
-     board[combination].all?{|character| character=='O'})
+    (board.values_at(*combination).all?{|character| character=='X'} ||
+     board.values_at(*combination).all?{|character| character=='O'})
    }
 end
