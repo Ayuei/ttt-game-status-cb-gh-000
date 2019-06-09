@@ -21,5 +21,4 @@ def won?(board)
     (board[combination].all?{|character| character=='X'} ||
      board[combination].all?{|character| character=='O'})
    }
-  end
 end
