@@ -24,7 +24,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? do |position|
+  !board.any? do |position|
     position.strip == ""
   end
 end
